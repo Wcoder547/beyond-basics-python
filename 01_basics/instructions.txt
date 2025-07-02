@@ -1,0 +1,106 @@
+📘 Python Notes — Basics: os, sys, import, reload
+=================================================
+
+📍 Location:
+    /home/malik-waseem/Malik waseem/IMPORTANT MEGA/python/01_basics
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1️⃣ MODULE: os — Working with Operating System
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔹 THEORY:
+    The `os` module in Python provides functions to interact with the operating system.
+    Commonly used to get or change directories, manage files and folders.
+
+🔹 PRACTICAL:
+    >>> import os
+    >>> os.getcwd()
+    '/home/malik-waseem/Malik waseem/IMPORTANT MEGA/python/01_basics'
+
+    ✅ `getcwd()` returns the **current working directory**.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2️⃣ FOR LOOP — Python Iteration
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔹 THEORY:
+    The `for` loop is used to iterate over a sequence (like a string, list, tuple).
+
+🔹 ERROR EXAMPLE:
+    >>> for c in "chai":
+    ... print(c)
+    IndentationError: expected an indented block after 'for' statement
+
+    ❌ Python expects an indented block after control structures like `for`.
+
+🔹 CORRECTED:
+    >>> for c in "chai":
+    ...     print(c)
+    c
+    h
+    a
+    i
+
+    ✅ Always indent the body of the loop using 4 spaces or a tab.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3️⃣ MODULE: sys — System-specific Parameters
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔹 THEORY:
+    The `sys` module provides access to variables and functions used or maintained by the interpreter.
+
+🔹 PRACTICAL:
+    >>> import sys
+    >>> sys.platform
+    'linux'
+
+    ✅ `sys.platform` tells you which OS Python is running on.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4️⃣ MODULE: Importing a Custom Python File
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔹 SCENARIO:
+    You created a custom Python file: `hello_world.py`
+
+    It contains:
+    -----------------------
+    print("Hello world")
+    chai_one = "lemon tea"
+
+    def chai(name):
+        print(name)
+    -----------------------
+
+🔹 PRACTICAL:
+    >>> import hello_world
+    Hello world
+    lemon tea
+
+    ✅ The code at the top level runs when imported.
+    ✅ Use functions and variables:
+        >>> hello_world.chai("mint tea")
+        mint tea
+
+        >>> hello_world.chai_one
+        'lemon tea'
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5️⃣ RELOAD MODULE using importlib
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔹 THEORY:
+    If you change the contents of a module file, Python won't automatically reload it.
+    You must use `importlib.reload()` to reflect changes without restarting Python.
+
+🔹 PRACTICAL:
+    >>> from importlib import reload
+    >>> reload(hello_world)
+    Hello world
+    lemon tea
+
+    ✅ This re-runs the module code and updates its content in memory.
+
+
+
