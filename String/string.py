@@ -57,4 +57,41 @@ for letter in chai:
 
 # Raw string
 chai = r"Masala\chai"
-print(chai)
+print(chai) # Output: Masala\chai
+
+
+# Multiline Strings
+
+multiline_chai="""
+Masala Chai Recipe:
+- Water
+- Tea Leaves
+- Spices
+- Milk
+- Sugar
+- Enjoy!
+"""
+print(multiline_chai)
+
+multiline_kashmiri_chai = '''
+Kashmiri Chai Recipe:
+- kashmiri packed tea packet
+- Almonds
+- Hot Milk
+- Sugar
+- Enjoy!
+'''
+print(multiline_kashmiri_chai)
+
+txt = "The best things in life are free!"
+print("The" in txt)         # True
+print("expensive" not in txt)  # True
+
+
+age=18
+txt=f"age of waseem is {age}"
+print(txt)
+
+
+opr = f"the sum of 5+7 is {5+7}"
+print(opr)
