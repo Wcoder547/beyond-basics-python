@@ -1,13 +1,13 @@
 # Question No 1.
 # Get a score value from the user.
 userScore = input("Give me a score value: \n")
-print("User score (as string):", userScore)  # Correct variable name: userScore
+print("User score (as string):", userScore)  
 
 # Convert to integer.
 userScore_in_int = int(userScore)
 print("User score (as integer):", userScore_in_int)
 
-# Ask user's age and determine category.
+
 age = input("Please provide me age: ")
 age = int(age)
 if age < 13:
@@ -25,10 +25,10 @@ age = 22
 day = "wednesday" 
 price = 12 if age >= 18 else 8
 
-# Correct indentation and use correct comparison operator.
+
 if day == "wednesday":
     price = price - 2
-    # Alternatively: price -= 2
+  
 
 print("Ticket price for you is $:", price)
 
@@ -69,7 +69,6 @@ if fruit == "Banana":
 
 # Question No 5.
 weather = "Sunny"
-# Use '==' for comparisons, not '='.
 if weather == "Sunny":
     activity = "Go for a walk"
 elif weather == "Rainy":
@@ -98,7 +97,7 @@ print("AI recommends you the transport:", transport)
 order_size = "Medium"
 extra_shot = True
 
-# Use consistent variable name for coffee.
+
 if extra_shot:
     coffee = order_size + " coffee with an extra shot"
 else:
