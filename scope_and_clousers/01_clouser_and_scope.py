@@ -1,45 +1,43 @@
-# ✅ Example 1: Global Variable Usage
 a = 5
 
 def function(): 
-    global a  # Use the global 'a' instead of creating a local one
-    print("Before changing, a =", a)  # Should print 5
-    a = 10  # Update global variable 'a'
-    print("After changing, a =", a)   # Should print 10
+    global a  
+    print("Before changing, a =", a)  
+    a = 10  
+    print("After changing, a =", a)  
 
 function()
-print("Global a after function call:", a)  # Confirm global 'a' is now 10
+print("Global a after function call:", a)  
 
 
-# ✅ Example 2: Closure Example – Function Inside a Function
+
 def f1():
-    x = 88  # This is in the enclosing scope of f2
+    x = 88  
     def f2():
-        print("Value from closure:", x)  # f2 uses x from f1
-    return f2  # Return the inner function
+        print("Value from closure:", x)  
+    return f2 
 
-myResult = f1()  # myResult now holds reference to f2, with access to x=88
-myResult()       # Should print: Value from closure: 88
+myResult = f1() 
+myResult()       
 
 
-# ✅ Example 3: Function Factory using Closure
-def chaicoder(num):  # Outer function with parameter `num`
-    def actual(x):   # Inner function that uses `num` from outer scope
+def chaicoder(num): 
+    def actual(x):  
         return x ** num
-    return actual  # Return the inner function
+    return actual 
 
-f = chaicoder(2)  # f becomes a function that squares numbers
-g = chaicoder(3)  # g becomes a function that cubes numbers
+f = chaicoder(2) 
+g = chaicoder(3) 
 
-print("Function f (square):", f)  # Prints function reference
-print("Function g (cube):", g)    # Prints function reference
+print("Function f (square):", f)  
+print("Function g (cube):", g)    
 
 print("f(3) =", f(3))  # 3^2 = 9
 print("g(3) =", g(3))  # 3^3 = 27
 
 
 
-# Closure to keep track of count
+
 def counter():
     count = 0
     def increment():
@@ -56,9 +54,9 @@ count2 = counter()
 print(count2())  # 1 (separate instance)
 print(count1())  # 3 (continues from previous count1)
 
-#Add-On 2: Lambda with Closure
+
 def power_maker(n):
-    return lambda x: x ** n  # Returns an anonymous function that remembers n
+    return lambda x: x ** n  
 
 square = power_maker(2)
 cube = power_maker(3)
@@ -67,7 +65,7 @@ print("square(4) =", square(4))  # 16
 print("cube(2) =", cube(2))      # 8
 
 
-#Add-On 3: Function Scope vs Global vs Nonlocal
+
 
 x = "global"
 
@@ -85,7 +83,7 @@ print("Global:", x)
 
 
 
-#Add-On 4: Common Mistake in Closures in Loops (Late Binding)
+
 functions = []
 
 for i in range(3):
