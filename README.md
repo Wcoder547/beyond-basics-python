@@ -16,6 +16,12 @@ This repository uses a range of Python capabilities and standard library tools. 
 - **API integration** using [`requests`](https://pypi.org/project/requests/) and JSON manipulation
 - **SQLite & MongoDB integration** to simulate lightweight data operations
 - **Basic error handling** and control flow using `try-except` blocks
+- **Performance measurement** using the `time` module
+- **Data structures** including lists, dictionaries, sets, and tuples with practical examples
+- **String manipulation** and formatting techniques
+- **Comprehensive practice problems** to reinforce learning and application of concepts
+- **Memory management** and execution flow examples
+- **Advanced data structures** and their use cases
 
 ---
 
@@ -36,10 +42,12 @@ In addition to the Python standard library, the repo uses:
 ```bash
 beyond-basics-python/
 ├── 01_basics/
+├── 02_booleans/
 ├── 10_Conditionals/
 ├── 10_functions/
 ├── 10_loops/
 ├── Api_handling/
+├── bts_in_loops/
 ├── Decoraters/
 ├── Dictionary/
 ├── Error_handling/
@@ -48,11 +56,14 @@ beyond-basics-python/
 ├── OOP/
 ├── String/
 ├── Tuples/
-├── bts_in_loops/
 ├── inner-working/
 ├── muteableVsimmutable/
 ├── scope_and_clousers/
+├── set/
+├── practise/
 ├── youtube_manager/
+
+
 ```
 
 ### 🔸 Directory Highlights
@@ -63,6 +74,16 @@ beyond-basics-python/
 - **[`bts_in_loops/`](./bts_in_loops/)** – Explains what happens internally during iteration
 - **[`scope_and_clousers/`](./scope_and_clousers/)** – Shows lexical scoping and closures in action
 - **[`inner-working/`](./inner-working/)** – Contains memory management and execution flow examples
+- **[`muteableVsimmutable/`](./muteableVsimmutable/)** – Explores mutable vs immutable types in Python
+- **[`OOP/`](./OOP/)** – Covers classes, inheritance, and method overriding
+- **[`Error_handling/`](./Error_handling/)** – Basic error handling with `try-except` blocks
+- **[`practise/`](./practise/)** – A collection of practice problems to reinforce learning
+- **[`10_functions/`](./10_functions/)** – Function definitions, arguments, and return values
+- **[`10_loops/`](./10_loops/)** – Loop constructs and control flow
+- **[`10_Conditionals/`](./10_Conditionals/)** – Conditional statements and logic
+- **[`01_basics/`](./01_basics/)** – Python syntax and basic constructs
+- **[`02_booleans/`](./02_booleans/)** – Boolean logic
+- 
 
 ---
 
@@ -70,3 +91,4 @@ beyond-basics-python/
 
 - **Wasim Akram** — [LinkedIn Profile](https://www.linkedin.com/in/wasim-akram-dev/)
 - **Contact:** [malikwaseemshzad@gmail.com](mailto:malikwaseemshzad@gmail.com)
+- 
